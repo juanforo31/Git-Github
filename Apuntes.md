@@ -167,4 +167,17 @@ Luego de haber añadido el origen remoto de nuestros archivos se deben traer los
 $ git pull origin RamaPrincipal
 ~~~
 
-TIP: Actualmente GitHub usa como rama principal (**main**), entonces es necesario para estos casos que la rama principal del repositorio remoto y el repositorio local tengan el mismo nombre así no tendrían inconvenientes por las ramas, para cambiar el nombre de la rama en el repositorio local se puede ir al apartado de ***CÓMO RENOMBRAR UNA RAMA EN EL REPOSITORIO LOCAL***, pero en caso de quererla cambiar en GitHub es necesario ir al apartado de ajustes en donde uno puede personalizar el nombre por defecto de la rama principal.
+TIPS: 
+1. Actualmente GitHub usa como rama principal (**main**), entonces es necesario para estos casos que la rama principal del repositorio remoto y el repositorio local tengan el mismo nombre así no tendrían inconvenientes por las ramas, para cambiar el nombre de la rama en el repositorio local se puede ir al apartado de ***CÓMO RENOMBRAR UNA RAMA EN EL REPOSITORIO LOCAL***, pero en caso de quererla cambiar en GitHub es necesario ir al apartado de ajustes en donde uno puede personalizar el nombre por defecto de la rama principal.
+
+2. En caso de que el comando anterior mencionando que se rehúsa a fusionar historias no relacionadas se puede usar el comando ***git pull origin RamaPrincipal --allow-unrelated-histories***, de esta manera forzaríamos a que git acepte los archivos que estamos trayendo de GitHub.
+
+~~~
+$ git pull origin RamaPrincipal --allow-unrelated-histories
+~~~
+
+Luego de haber traído la información de nuestro repositorio remoto a nuestro local, ya podríamos añadir todos los archivos que tenemos en el repositorio remoto, para realizar esta acción utilizamos el comando ***git push origin RamaPrincipal***.
+
+~~~
+$ git push origin RamaPrincipal --allow-unrelated-histories
+~~~
