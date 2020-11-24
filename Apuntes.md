@@ -147,3 +147,24 @@ $ git merge git merge nombre_ramaAfusionar
 ~~~
 
 En algunos casos al correr este comando pueden ocurrir ciertos conflictos, uno de estos se da porque en las dos ramas se modificaron los mismos espacios de código, para solucionar este conflicto **Visual Studio Code** nos permite ver en qué líneas de código ocurrieron los conflictos, acá sería necesario la comunicación para saber que pedazos de código se necesitan dejar y cuales no se dejarían, o en otro caso se organizaría el archivo para que los dos pedazos de código se encuentren en el mismo archivo. luego de esto será necesario añadir los cambios y realizar el commit, al igual que se explicó en el apartado ***CÓMO ADICIONAR CAMBIOS AL REPOSITORIO LOCAL DESDE UNA MISMA RAMA***.
+
+## QUÉ ES GITHUB?
+---
+GitHub al igual que git es un control de versiones, la pequeña diferencia con esté es que permite guardar la información en un repositorio remoto, y así mismo permite que varias personas puedan hacer cambios y pueda ser más ágil el trabajo.
+
+## CÓMO ME PUEDO TRAER LA INFORMACIÓN O SUBIR CAMBIOS AL REPOSITORIO REMOTO
+---
+
+Para subir la información a nuestro repositorio remoto primero que todo es necesario decirle a git que vamos a añadir un origen remoto de nuestros archivos, para hacer esto utilizamos en comando ***git remote add origin UrlREpositorio***.
+
+~~~
+$ git remote add origin UrlREpositorio
+~~~
+
+Luego de haber añadido el origen remoto de nuestros archivos se deben traer los cambios que tenga el repositorio remoto, ya que en algunas ocasiones el repositorio remoto puede traer algunos archivos como el archivo README.md. Para traernos estos cambios se utiliza el comando ***git pull origin RamaPrincipal***
+
+~~~
+$ git pull origin RamaPrincipal
+~~~
+
+TIP: Actualmente GitHub usa como rama principal (**main**), entonces es necesario para estos casos que la rama principal del repositorio remoto y el repositorio local tengan el mismo nombre así no tendrían inconvenientes por las ramas, para cambiar el nombre de la rama en el repositorio local se puede ir al apartado de ***CÓMO RENOMBRAR UNA RAMA EN EL REPOSITORIO LOCAL***, pero en caso de quererla cambiar en GitHub es necesario ir al apartado de ajustes en donde uno puede personalizar el nombre por defecto de la rama principal.
