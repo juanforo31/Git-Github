@@ -1,6 +1,6 @@
 # GIT & GITHUB
 
-## QUE ES GIT?
+## QUÉ ES GIT?
 ---
 Git es un control de versiones de archivos de texto plano, el cual ayuda a controlar las modificaciones y adiciones que se le puedan hacer a un mismo archivo, esto permite mantener un mejor orden y además de este, ayuda a que varias personas puedan trabajar en un mismo proyecto.
 
