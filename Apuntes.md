@@ -179,5 +179,5 @@ $ git pull origin RamaPrincipal --allow-unrelated-histories
 Luego de haber traído la información de nuestro repositorio remoto a nuestro local, ya podríamos añadir todos los archivos que tenemos en el repositorio remoto, para realizar esta acción utilizamos el comando ***git push origin RamaPrincipal***.
 
 ~~~
-$ git push origin RamaPrincipal --allow-unrelated-histories
+$ git push origin RamaPrincipal
 ~~~
