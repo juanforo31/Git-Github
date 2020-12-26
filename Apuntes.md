@@ -126,7 +126,7 @@ Para crear una rama nueva rama en el repositorio local es tan simple como escrib
 
 ~~~
 ## Para crear una rama 
-$ branch name_branch
+$ git branch name_branch
 
 ## Para cambiar a la rama creada 
 $ git checkout name_branch
@@ -136,6 +136,15 @@ TIP: En caso de recordar el nombre de la rama a la que se desea ir, puede usar e
 
 ~~~
 $ git branch --list
+~~~
+
+### CÓMO ELIMINAR UNA RAMA LOCAL
+---
+
+En ciertas ocaciones podemos haber creado ramas sin darnos cuenta, y al enlistarlas veremos una cantidad de ramas o que no estamos usando o que se crearon sin darnos cuentas, en este caso es mucho mejor eliminarlas en caso de que no se vayan a utilizar, para este usaremos el comando ***git branch -d nameBranch***.
+
+~~~
+$ git branch -d nameBranch
 ~~~
 
 ### CÓMO FUSIONAR DOS RAMAS
