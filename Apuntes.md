@@ -98,6 +98,7 @@ A veces en nuestros proyectos nosotros podemos subir unos cambios los cuales rom
 ~~~
 ## Volver al pasado con posibilidad de regresar al futuro
 $ git checkout IdCommit name_file.txt
+
 ## Volver a la version actual en la que se habia dejado
 $ git checkout rama_principal
 
