@@ -153,7 +153,7 @@ $ git branch -d nameBranch
 Para fusionar ramas toca dejar claro primero una cosa, las dos ramas deben tener los últimos commit actualizados ya que no quisiéramos fusionarlos con una versión que no es, desde de tener esto en cuenta es necesario estar en la rama a la cual se le aplicaran los cambios y luego escribir el siguiente comando ***git merge nombre_ramaAfusionar***, de esta manera se creara una nueva versión en la rama en la cual se encuentra actualmente como si fuera un commit solo que en este caso se fusiona la rama en la que se está ubicado con la rama que se añadió en el comando.
 
 ~~~
-$ git merge git merge nombre_ramaAfusionar
+$ git merge nombre_ramaAfusionar
 ~~~
 
 En algunos casos al correr este comando pueden ocurrir ciertos conflictos, uno de estos se da porque en las dos ramas se modificaron los mismos espacios de código, para solucionar este conflicto **Visual Studio Code** nos permite ver en qué líneas de código ocurrieron los conflictos, acá sería necesario la comunicación para saber que pedazos de código se necesitan dejar y cuales no se dejarían, o en otro caso se organizaría el archivo para que los dos pedazos de código se encuentren en el mismo archivo. luego de esto será necesario añadir los cambios y realizar el commit, al igual que se explicó en el apartado ***CÓMO ADICIONAR CAMBIOS AL REPOSITORIO LOCAL DESDE UNA MISMA RAMA***.
@@ -209,3 +209,10 @@ La forma de hacerlo es la siguiente:
 5. La persona a la que enviamos el mensaje cifrado puede usar su llave privada para descifrar el mensaje y ver los archivos.
 
 Puedes compartir tu llave pública pero nunca tu llave privada.
+
+## CÓMO CLONAR UN REPOSITORIO DESDE OTRO DISPOSITIVO CON UN CUENTA DIFERENTE
+---
+Para traer la información de un repositorio remoto ya creado es necesario hacer el siguiente comando
+~~~
+$ git clone UrlRepositorio
+~~~
